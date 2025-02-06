@@ -3,12 +3,13 @@ let ans = [];
 	if (!str) { 
         return ans;
     }
+	let newStr=[]
     
 for (let i = 0; i < str.length; i += size) {
-	let newStr=str.slice(i, i + size)
-    result.push(newStr);
+	str.slice(i, i + size);
+    ans.push(newStr);
 }    
-console.log(result);
+return ans;
 }
 
 // Do not change the code below
